@@ -19,7 +19,7 @@ const Review = ({id}) => {
   return (
     <Wrap>
           <TitleWrap>
-            <div className="company-text">{data.company} ・ <span className="gothamRegular">{data.date}</span></div>
+            <div className="company-text">{data.company} ・ <span className="gothamRegular date-text">{data.date}</span></div>
             <div className="title-text">{data.title}</div>
           </TitleWrap>
           <DetailWrap>
@@ -70,6 +70,12 @@ const TitleWrap = styled.div`
     font-size: 1rem;
     line-height: 1.5rem;
     color: #B9BFD3;
+  }
+
+  .date-text{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
   }
 
   .title-text{

@@ -49,6 +49,9 @@ const ReviewPageWrap = styled.div`
 const MenuWrap = styled.div`
   width: 11.875rem;
   border-left: 1px solid #40475C;
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
 
   ul {
     list-style: none;
