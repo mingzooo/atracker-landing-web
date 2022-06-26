@@ -104,7 +104,7 @@ const DetailWrap = styled.div`
 
   .img-circle{
     position: absolute;
-    top: 0.25rem;
+    top: 0.375rem;
     left: -0.5625rem;
     width: 1.0625rem;
     height: 1.0625rem;
