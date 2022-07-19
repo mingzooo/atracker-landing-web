@@ -52,10 +52,14 @@ const ContainerWrap = styled.div`
 
   .img_line {
     position: absolute;
-    width: 26.5rem;
-    height: 24.625rem;
+    width: 21.875rem;
+    height: 21.875rem;
     top: -3.75rem;
-    left: -12.5625rem;
+    left: 0;
+
+    @media (max-width: 63.75rem) {
+    display: none;
+  }
   }
 `;
 
