@@ -19,6 +19,9 @@ const ContainerWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 63.75rem) {
+    display: none;
+  }
 `;
 
 const HeaderWrap = styled.div`

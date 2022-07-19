@@ -30,6 +30,9 @@ const ComponentWrap = styled.div`
   justify-content: center;
   border-top: 0.0625rem solid #40475c;
   border-bottom: 0.0625rem solid #40475c;
+  @media (max-width: 63.75rem) {
+    display: none;
+  }
 `;
 
 const DownloadWrap = styled.div`

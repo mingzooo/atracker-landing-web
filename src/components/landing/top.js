@@ -57,9 +57,13 @@ const ContainerWrap = styled.div`
     top: -3.75rem;
     left: 0;
 
-    @media (max-width: 63.75rem) {
+    @media (max-width: 67.5rem) {
     display: none;
   }
+  }
+
+  @media (max-width: 63.75rem) {
+    display: none;
   }
 `;
 

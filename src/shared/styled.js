@@ -89,9 +89,20 @@ export const PageWrap = styled.div`
     background-color: #14161E;
     z-index: -999;
   }
+
   @media (max-width: 63.75rem) {
-    width: 22.5rem;
-    overflow-x: hidden;
-    border: 1px solid white;
+    width: 23.125rem;
+    border: 3px solid white;
+
+    ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -624.9375rem;
+    right: -624.9375rem;
+    background-color: #14161E;
+    z-index: -999;
+  }
   }
 `;

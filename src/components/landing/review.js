@@ -57,11 +57,18 @@ const Review = ({id}) => {
 const Wrap = styled.div`
     width: 100%;
     white-space: pre-wrap;
+    @media (max-width: 63.75rem) {
+    width: 23.125rem;
+  }
 `;
 
 const TitleWrap = styled.div`
   width: 100%;
   padding: 3.25rem 0 2.375rem 2.3125rem;
+
+  @media (max-width: 63.75rem) {
+      padding: 1.5rem 1.25rem;
+    }
 
   .company-text{
     font-family: 'Apple SD Gothic Neo';
@@ -70,12 +77,22 @@ const TitleWrap = styled.div`
     font-size: 1rem;
     line-height: 1.5rem;
     color: #B9BFD3;
+    @media (max-width: 63.75rem) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+    }
   }
 
   .date-text{
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 400;
+    @media (max-width: 63.75rem) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+    }
   }
 
   .title-text{
@@ -86,6 +103,10 @@ const TitleWrap = styled.div`
     line-height: 2.75rem;
 
     color: #E9E9E9;
+    @media (max-width: 63.75rem) {
+      font-size: 1.1106rem;
+      line-height: 1.625rem;
+    }
   }
 `;
 
@@ -94,6 +115,10 @@ const DetailWrap = styled.div`
   padding-top: 4.375rem;
   border-top: 1px solid #40475C;
   color: #E9E9E9;
+
+  @media (max-width: 63.75rem) {
+      padding-top: 1.5rem;
+    }
 
   .detail-container{
     position: relative;
