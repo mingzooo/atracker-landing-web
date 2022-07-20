@@ -97,7 +97,7 @@ const MenuWrap = styled.div`
 
   @media (max-width: 63.75rem) {
     width: 23.125rem;
-    border-right: 1px solid #40475c;
+    border-left: 0;
   }
 
   ul {
@@ -152,6 +152,7 @@ const ReviewWrap = styled.div`
   border-right: 1px solid #40475c;
   @media (max-width: 63.75rem) {
       width: 100%;
+      border: 0;
     }
 `;
 
