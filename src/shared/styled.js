@@ -92,6 +92,5 @@ export const PageWrap = styled.div`
 
   @media (max-width: 63.75rem) {
     width: 23.125rem;
-    border: 3px solid white;
   }
 `;

@@ -61,6 +61,9 @@ const ComponentWrap = styled.div`
   color: #969cb1;
   display: flex;
   justify-content: center;
+  @media (max-width: 63.75rem) {
+      display: none;
+    }
 `;
 
 const FooterWrap = styled.div`
