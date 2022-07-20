@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import review_data from '../../data/reviews.json';
 import circle from '../../assets/circle.png';
+import blue_dot from '../../assets/blue_dot.png';
 
 const Review = ({id}) => {
 
@@ -26,14 +27,14 @@ const Review = ({id}) => {
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title">{data.detailTitle}</div>
+                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>{data.detailTitle}</div>
                 <div className="detail-text">{data.detailDetail}</div>
               </div>
             </div>
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title">서류</div>
+                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>서류</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
                 <br/>제출 약 3일 뒤 인터뷰를 하고 싶다는 메일이 왔고, 면접 일정을 조정하고 참석했다. 
                 <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
@@ -42,7 +43,7 @@ const Review = ({id}) => {
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title">면접</div>
+                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>면접</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
                 <br/>제출 약 3일 뒤 인터뷰를 하고 싶다는 메일이 왔고, 면접 일정을 조정하고 참석했다. 
                 <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
@@ -162,12 +163,24 @@ const DetailWrap = styled.div`
     font-size: 1.2356rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
 
     @media (max-width: 63.75rem) {
       font-size: 1.125rem;
       line-height: 1.375rem;
       color: white;
       margin-bottom: 1rem;
+    }
+
+    .blue-dot{
+      display: none;
+      @media (max-width: 63.75rem) {
+      display: flex;
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-right: 0.25rem;
+    }
     }
   }
 
