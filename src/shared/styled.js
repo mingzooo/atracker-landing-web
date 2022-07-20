@@ -91,7 +91,8 @@ export const PageWrap = styled.div`
   }
 
   @media (max-width: 63.75rem) {
-    width: 23.125rem;
+    max-width: 23.125rem;
+    width: 100%;
     overflow-x: hidden;
   }
 `;

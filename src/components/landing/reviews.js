@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import menubar from '../../assets/step_bar.png';
+
 import Review from "./review";
 
 const Reviews = () => {
@@ -47,6 +49,7 @@ const Reviews = () => {
             </li>
           </ul>
         </MenuWrap>
+        <img className="menu-bar-img" src={menubar}/>
         <ReviewWrap>
           <Review id={positionIndex} />
         </ReviewWrap>
@@ -73,6 +76,16 @@ const ReviewPageWrap = styled.div`
     width: 100%;
     flex-direction: column;
   }
+
+  .menu-bar-img{
+    display: none;
+
+    @media (max-width: 63.75rem) {
+    display: flex;
+    width: 100%;
+    height: 0.0625rem;
+  }
+  }
 `;
 
 const MenuWrap = styled.div`
@@ -84,7 +97,6 @@ const MenuWrap = styled.div`
 
   @media (max-width: 63.75rem) {
     width: 23.125rem;
-    border-bottom: 1px solid #40475c;
     border-right: 1px solid #40475c;
   }
 
