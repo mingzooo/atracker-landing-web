@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import review_data from '../../data/reviews.json';
 import circle from '../../assets/circle.png';
 import blue_dot from '../../assets/blue_dot.png';
+import blue5_dot from '../../assets/blue5_dot.png';
+import blue1_dot from '../../assets/blue1_dot.png';
 
 const Review = ({id}) => {
 
@@ -27,12 +29,12 @@ const Review = ({id}) => {
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>{data.detailTitle}</div>
+                <div className="detail-title"><img src={blue5_dot} className="blue-dot"/>{data.detailTitle}</div>
                 <div className="detail-text">{data.detailDetail}</div>
               </div>
             </div>
-            <div className="detail-container">
-              <img src={circle} className="img-circle"/>
+            <div className="detail-container" >
+              <img src={circle} className="img-circle" style={{borderBottom:'1px solid #3C8AFF'}}/>
               <div className="detail-wrap">
                 <div className="detail-title"><img src={blue_dot} className="blue-dot"/>서류</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
@@ -40,10 +42,10 @@ const Review = ({id}) => {
                 <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
               </div>
             </div>
-            <div className="detail-container">
+            <div className="detail-container" style={{borderBottom:'1px solid #37FFDB'}}>
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>면접</div>
+                <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>면접</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
                 <br/>제출 약 3일 뒤 인터뷰를 하고 싶다는 메일이 왔고, 면접 일정을 조정하고 참석했다. 
                 <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
@@ -130,6 +132,7 @@ const DetailWrap = styled.div`
 
     @media (max-width: 63.75rem) {
       border-bottom: 1px solid #3153FF;
+
       margin-bottom: 0;
       padding: 1.5rem 1rem 2.125rem 1rem;
     }
