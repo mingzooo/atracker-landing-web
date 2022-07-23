@@ -54,8 +54,8 @@ const ContainerWrap = styled.div`
     position: absolute;
     width: 21.875rem;
     height: 21.875rem;
-    top: -3.75rem;
-    left: 0;
+    top: -7.5rem;
+    left: -6.25rem;
 
     @media (max-width: 67.5rem) {
     display: none;
