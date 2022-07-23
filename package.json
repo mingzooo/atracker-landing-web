@@ -15,10 +15,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
+  "homepage": "https://mingzooo.github.io/atracker-landing-web/",
   "eslintConfig": {
     "extends": [
       "react-app",
