@@ -6,7 +6,7 @@ const RootRoute = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Terms />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
     </BrowserRouter>
