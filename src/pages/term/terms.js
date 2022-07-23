@@ -9,7 +9,7 @@ const Terms = () => {
   return (
     <PageWrap>
       <TermWrap>
-        <div className="title">서비스 이용약관</div>
+        <div className="title">개인정보 처리방침</div>
         <div className="detail">{term_data.terms[0].user}</div>
       </TermWrap>
     </PageWrap>
