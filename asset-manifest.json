@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/atracker-landing-web/static/js/main.e7d294fc.js",
+    "static/media/atracker_screenshot.png": "/atracker-landing-web/static/media/atracker_screenshot.9baa859292af9fd0f9f4.png",
+    "static/media/left-phone.png": "/atracker-landing-web/static/media/left-phone.0b27492737caf9eaca2d.png",
+    "static/media/lines.png": "/atracker-landing-web/static/media/lines.b79538879d6cbad58b45.png",
+    "index.html": "/atracker-landing-web/index.html",
+    "main.e7d294fc.js.map": "/atracker-landing-web/static/js/main.e7d294fc.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e7d294fc.js"
+  ]
+}
