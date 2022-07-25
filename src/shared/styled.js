@@ -78,7 +78,7 @@ export const PageWrap = styled.div`
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: #272A35;
+  background: #1F2129;
   ::before {
     content: "";
     position: absolute;

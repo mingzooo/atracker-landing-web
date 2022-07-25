@@ -65,6 +65,11 @@ const ComponentWrap = styled.div`
   font-size: 1rem;
   display: flex;
   justify-content: center;
+  @media (max-width: 63.75rem) {
+    width: 100%;
+    flex-direction: column;
+    background-color: #1F2129;
+  }
 `;
 
 const ReviewPageWrap = styled.div`
