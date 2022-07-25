@@ -73,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const PageWrap = styled.div`
   position: absolute;
-  max-width: 120.125rem;
+  max-width: 160rem;
   top: 0;
   left: 0;
   right: 0;
