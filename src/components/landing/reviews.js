@@ -108,7 +108,6 @@ const MenuWrap = styled.div`
   ul {
     list-style: none;
     margin-top: 3.125rem;
-    line-height: 1.5rem;
 
     @media (max-width: 63.75rem) {
       margin: 0;
@@ -142,7 +141,7 @@ const MenuWrap = styled.div`
   .is-active {
     text-decoration: underline;
     text-underline-position: under;
-    font-weight: 700;
+    font-weight: 600;
     color: #a5abbf;
 
     @media (max-width: 63.75rem) {

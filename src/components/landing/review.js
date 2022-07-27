@@ -42,8 +42,8 @@ const Review = ({id}) => {
                 <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
               </div>
             </div>
-            <div className="detail-container" style={{borderBottom:'1px solid #37FFDB'}}>
-              <img src={circle} className="img-circle"/>
+            <div className="detail-container">
+              <img src={circle} className="img-circle" style={{borderBottom:'1px solid #37FFDB'}}/>
               <div className="detail-wrap">
                 <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>면접</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
@@ -61,7 +61,7 @@ const Wrap = styled.div`
     width: 100%;
     white-space: pre-wrap;
     @media (max-width: 63.75rem) {
-    width: 23.125rem;
+    width: 100%;
   }
 `;
 
