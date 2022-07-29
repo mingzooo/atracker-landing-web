@@ -61,6 +61,8 @@ const ComponentWrap = styled.div`
   color: #969cb1;
   display: flex;
   justify-content: center;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   @media (max-width: 63.75rem) {
       display: none;
     }
@@ -85,10 +87,12 @@ const Social = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.6875rem;
+  line-height: 1rem;
 
   img {
-    width: 1.3356rem;
-    height: 1.3356rem;
+    width: 2.1244rem;
+    height: 2.1244rem;
     cursor: pointer;
     margin-right: 0.6875rem;
   }
