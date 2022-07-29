@@ -127,7 +127,6 @@ const MenuWrap = styled.div`
   li {
     margin-bottom: 1.5rem;
     cursor: pointer;
-    line-height: 1.5rem;
 
     :hover {
       color: #a5abbf;
