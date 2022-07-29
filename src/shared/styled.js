@@ -78,7 +78,7 @@ export const PageWrap = styled.div`
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: #1F2129;
+  background: #272A35;
   /* ::before {
     content: "";
     position: absolute;
@@ -91,6 +91,7 @@ export const PageWrap = styled.div`
   } */
 
   @media (max-width: 63.75rem) {
+    background: #1F2129;
     max-width: 26.25rem;
     width: 100%;
     overflow-x: hidden;

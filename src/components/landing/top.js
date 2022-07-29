@@ -51,7 +51,6 @@ const Top = () => {
 };
 
 const ContainerWrap = styled.div`
-  background: #272A35;
   position: relative;
 
   .img_left {
@@ -61,7 +60,7 @@ const ContainerWrap = styled.div`
     top: 0;
     left: 0;
 
-    @media (max-width: 131.875rem) {
+    @media (max-width: 63.75rem) {
     display: none;
   }
   }
@@ -73,7 +72,7 @@ const ContainerWrap = styled.div`
     top: 0;
     right: 0;
 
-    @media (max-width: 131.875rem) {
+    @media (max-width: 63.75rem) {
     display: none;
   }
   }
@@ -88,6 +87,7 @@ const TopWrap = styled.div`
   display: flex;
   flex-direction: row;
   color: #fff;
+  background: #272A35;
 
   img {
     height: 33.375rem;
@@ -110,6 +110,7 @@ const TopWrap = styled.div`
 const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .title-text {
     margin: 4.5rem 0 3.5625rem 0;

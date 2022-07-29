@@ -36,6 +36,7 @@ const HeaderWrap = styled.div`
     width: 6.9375rem;
     height: 2rem;
     object-fit: contain;
+    position: relative;
   }
 
   .slogan {

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 import review_data from '../../data/reviews.json';
 import circle from '../../assets/circle.png';
-import blue_dot from '../../assets/blue_dot.png';
+import blue7_dot from '../../assets/blue7_dot.png';
 import blue5_dot from '../../assets/blue5_dot.png';
+import blue3_dot from '../../assets/blue3_dot.png';
 import blue1_dot from '../../assets/blue1_dot.png';
 
 const Review = ({id}) => {
@@ -26,34 +27,34 @@ const Review = ({id}) => {
             <div className="company-text">{data.company} ・ <span className="gothamRegular date-text">{data.date}</span></div>
           </TitleWrap>
           <DetailWrap>
-            <div className="detail-container">
+            <DetailContainer borderColor="#374FEB">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue5_dot} className="blue-dot"/>{data.detailTitleOne}</div>
+                <div className="detail-title"><img src={blue7_dot} className="blue-dot"/>{data.detailTitleOne}</div>
                 <div className="detail-text">{data.detailDetailOne}</div>
               </div>
-            </div>
-            <div className="detail-container" >
+            </DetailContainer>
+            <DetailContainer borderColor="#3C8AFF">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>{data.detailTitleTwo}</div>
+                <div className="detail-title"><img src={blue5_dot} className="blue-dot"/>{data.detailTitleTwo}</div>
                 <div className="detail-text">{data.detailDetailTwo}</div>
               </div>
-            </div>
-            <div className="detail-container">
+            </DetailContainer>
+            <DetailContainer borderColor="#0ED3FE">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>{data.detailTitleThree}</div>
+                <div className="detail-title"><img src={blue3_dot} className="blue-dot"/>{data.detailTitleThree}</div>
                 <div className="detail-text">{data.detailDetailThree}</div>
               </div>
-            </div>
-            <div className="detail-container">
+            </DetailContainer>
+            <DetailContainer borderColor="#37FFDB">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
                 <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>최종 후기</div>
                 <div className="detail-text">{data.finalReview}</div>
               </div>
-            </div>
+            </DetailContainer>
             <div className="gothamRegular source-text">© 보드카썬라이즈 All Rights Reserved. {data.title}</div>
           </DetailWrap>
         </Wrap>
@@ -128,19 +129,6 @@ const DetailWrap = styled.div`
       width: 100%;
     }
 
-  .detail-container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3.75rem;
-
-    @media (max-width: 63.75rem) {
-      border-bottom: 1px solid #3153FF;
-
-      margin-bottom: 0;
-      padding: 1.5rem 1rem 2.125rem 1rem;
-    }
-  }
 
   .img-circle{
     position: absolute;
@@ -159,7 +147,7 @@ const DetailWrap = styled.div`
     margin: 0 1.8125rem;
 
     @media (max-width: 63.75rem) {
-      margin-left:0;
+      margin: 0;
     }
   }
 
@@ -212,4 +200,17 @@ const DetailWrap = styled.div`
   }
 `;
 
+const DetailContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3.75rem;
+
+  @media (max-width: 63.75rem) {
+    border-bottom: 1px solid ${props=>props.borderColor};
+
+    margin-bottom: 0;
+    padding: 1.5rem 1rem 2.125rem 1rem;
+  }
+`;
 export default Review;
