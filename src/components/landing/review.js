@@ -156,7 +156,7 @@ const DetailWrap = styled.div`
   .detail-wrap{
     display: flex;
     flex-direction: column;
-    margin-left: 1.8125rem;
+    margin: 0 1.8125rem;
 
     @media (max-width: 63.75rem) {
       margin-left:0;
