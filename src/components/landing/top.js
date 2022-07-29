@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../shared/header";
 
-import lines from "../../assets/lines.png";
 import top_left from '../../assets/top_left.png';
 import top_right from '../../assets/top_right.png';
 import down_arrow from "../../assets/download_arrow.png";
@@ -99,13 +98,11 @@ const TopWrap = styled.div`
     height: 25.625rem;
     position: relative;
     bottom: -7.75rem;
-    right: -5.625rem;
+    right: -1.875rem;
   }
 
   .right-phone{
     position: relative;
-    left: 8.125rem;
-    
   }
 
 `;
@@ -128,6 +125,7 @@ const TextWrap = styled.div`
 
   .download-text {
     font-size: 1rem;
+    line-height: 1.6875rem;
     border-bottom: 0.0625rem solid #37ffdb;
     margin-right: 0.9375rem;
   }

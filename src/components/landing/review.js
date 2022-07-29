@@ -34,7 +34,7 @@ const Review = ({id}) => {
               </div>
             </div>
             <div className="detail-container" >
-              <img src={circle} className="img-circle" style={{borderBottom:'1px solid #3C8AFF'}}/>
+              <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
                 <div className="detail-title"><img src={blue_dot} className="blue-dot"/>서류</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
@@ -43,7 +43,7 @@ const Review = ({id}) => {
               </div>
             </div>
             <div className="detail-container">
-              <img src={circle} className="img-circle" style={{borderBottom:'1px solid #37FFDB'}}/>
+              <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
                 <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>면접</div>
                 <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
