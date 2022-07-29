@@ -29,29 +29,32 @@ const Review = ({id}) => {
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue5_dot} className="blue-dot"/>{data.detailTitle}</div>
-                <div className="detail-text">{data.detailDetail}</div>
+                <div className="detail-title"><img src={blue5_dot} className="blue-dot"/>{data.detailTitleOne}</div>
+                <div className="detail-text">{data.detailDetailOne}</div>
               </div>
             </div>
             <div className="detail-container" >
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>서류</div>
-                <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
-                <br/>제출 약 3일 뒤 인터뷰를 하고 싶다는 메일이 왔고, 면접 일정을 조정하고 참석했다. 
-                <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
+                <div className="detail-title"><img src={blue_dot} className="blue-dot"/>{data.detailTitleTwo}</div>
+                <div className="detail-text">{data.detailDetailTwo}</div>
               </div>
             </div>
             <div className="detail-container">
               <img src={circle} className="img-circle"/>
               <div className="detail-wrap">
-                <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>면접</div>
-                <div className="detail-text">- 자유 양식의 이력서+자기소개서 → 1차 면접 → 합격
-                <br/>제출 약 3일 뒤 인터뷰를 하고 싶다는 메일이 왔고, 면접 일정을 조정하고 참석했다. 
-                <br/>- 2:1 (면접관 2 지원자 1) 비대면 면접</div>
+                <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>{data.detailTitleThree}</div>
+                <div className="detail-text">{data.detailDetailThree}</div>
               </div>
             </div>
-            <div className="gothamRegular source-text">© 보드카썬라이즈 All Rights Reserved. 21년 하반기 기술보증기금 최탈 후기(예비 4번)</div>
+            <div className="detail-container">
+              <img src={circle} className="img-circle"/>
+              <div className="detail-wrap">
+                <div className="detail-title"><img src={blue1_dot} className="blue-dot"/>최종 후기</div>
+                <div className="detail-text">{data.finalReview}</div>
+              </div>
+            </div>
+            <div className="gothamRegular source-text">© 보드카썬라이즈 All Rights Reserved. {data.title}</div>
           </DetailWrap>
         </Wrap>
   )
