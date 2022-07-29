@@ -21,15 +21,15 @@ const Reviews = () => {
               className={positionIndex === 0 ? "is-active" : ""}
               onClick={() => onClickHandler(0)}
             >
-              Position
+              컨설팅 RA
             </li>
             <li
               className={positionIndex === 1 ? "is-active" : ""}
               onClick={() => onClickHandler(1)}
             >
-              Position
+              마케팅
             </li>
-            <li
+            {/* <li
               className={positionIndex === 2 ? "is-active" : ""}
               onClick={() => onClickHandler(2)}
             >
@@ -46,7 +46,7 @@ const Reviews = () => {
               onClick={() => onClickHandler(4)}
             >
               Position
-            </li>
+            </li> */}
           </ul>
         </MenuWrap>
         <img className="menu-bar-img" src={menubar}/>
