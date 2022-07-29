@@ -3,15 +3,18 @@ import styled from "styled-components";
 import Header from "../shared/header";
 
 import lines from "../../assets/lines.png";
+import top_left from '../../assets/top_left.png';
+import top_right from '../../assets/top_right.png';
 import down_arrow from "../../assets/download_arrow.png";
-import left_phone from '../../assets/left-phone.png';
-import right_phone from "../../assets/atracker_screenshot.png";
+import left_phone from '../../assets/left_phone.png';
+import right_phone from "../../assets/right_phone.png";
 
 const Top = () => {
   return (
     <ContainerWrap>
-      <img className="img_line" src={lines} />
+      <img className="img_left" src={top_left} />
       <Header />
+      <img className="img_right" src={top_right} />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <TopWrap>
           <TextWrap>
@@ -35,12 +38,13 @@ const Top = () => {
                 cursor: "pointer",
               }}
             >
-              <div className="gothamRegular download-text">Download</div>
               <img src={down_arrow} className="download-arrow" />
+              <div className="gothamRegular download-text">App Store</div>
+              <div className="gothamRegular download-text">Google Play</div>
             </div>
           </TextWrap>
           <img src={left_phone} className="left-phone" />
-          <img src={right_phone} />
+          <img src={right_phone} className="right-phone"/>
         </TopWrap>
       </div>
     </ContainerWrap>
@@ -48,14 +52,29 @@ const Top = () => {
 };
 
 const ContainerWrap = styled.div`
-  background: #292c3f;
+  background: #272A35;
+  position: relative;
 
-  .img_line {
+  .img_left {
     position: absolute;
-    width: 21.875rem;
-    height: 21.875rem;
-    top: -7.5rem;
-    left: -6.25rem;
+    width: 32.25rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 2150px) {
+    display: none;
+  }
+  }
+
+  .img_right{
+    position: absolute;
+    width: 32.25rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    z-index: -100;
 
     @media (max-width: 67.5rem) {
     display: none;
@@ -82,7 +101,13 @@ const TopWrap = styled.div`
     height: 25.625rem;
     position: relative;
     bottom: -7.75rem;
-    right: -1.875rem;
+    right: -5.625rem;
+  }
+
+  .right-phone{
+    position: relative;
+    left: 8.125rem;
+    
   }
 
 `;
@@ -106,12 +131,13 @@ const TextWrap = styled.div`
   .download-text {
     font-size: 1rem;
     border-bottom: 0.0625rem solid #37ffdb;
+    margin-right: 0.9375rem;
   }
 
   .download-arrow {
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 0.625rem;
+    margin-right: 0.9375rem;
   }
 `;
 export default Top;
