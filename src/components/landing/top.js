@@ -62,7 +62,7 @@ const ContainerWrap = styled.div`
     top: 0;
     left: 0;
 
-    @media (max-width: 2150px) {
+    @media (max-width: 131.875rem) {
     display: none;
   }
   }
@@ -74,9 +74,7 @@ const ContainerWrap = styled.div`
     top: 0;
     right: 0;
 
-    z-index: -100;
-
-    @media (max-width: 67.5rem) {
+    @media (max-width: 131.875rem) {
     display: none;
   }
   }
