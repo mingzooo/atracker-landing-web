@@ -123,6 +123,7 @@ const DetailWrap = styled.div`
   padding-top: 4.375rem;
   border-top: 1px solid #40475C;
   color: #E9E9E9;
+  font-weight: 300;
 
   @media (max-width: 63.75rem) {
       padding-top: 0;
