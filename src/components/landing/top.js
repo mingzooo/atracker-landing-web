@@ -55,7 +55,7 @@ const ContainerWrap = styled.div`
 
   .img_left {
     position: absolute;
-    width: 32.25rem;
+    width: 28.3125rem;
     height: 100%;
     top: 0;
     left: 0;
